@@ -1,14 +1,38 @@
 <resources>
 
     <!-- TODO: Add own styles here! -->
+    <style name="TextStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
+    <style name="Label" parent="TextStyle">
+        <item name="android:textColor">@color/uwGold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Label.Gold">
+        <item name="android:background">?android:colorAccent</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+
+
+    <style name="ButtonStyle" parent="@android:style/MediaButton">
+        <item name="android:textSize">22sp</item>
+    </style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@android:style/Theme.Material">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/uwPurple</item>
+        <item name="android:colorPrimaryDark">@color/uwDarkGray</item>
+        <item name="android:colorAccent">@color/uwGold</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/gray</item>
     </style>
 
 </resources>
